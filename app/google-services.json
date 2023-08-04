@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "35133400685",
+    "project_id": "criminaldetection-ac43b",
+    "storage_bucket": "criminaldetection-ac43b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35133400685:android:97fb9d3ff3439c2ff38164",
+        "android_client_info": {
+          "package_name": "com.example.criminaldetection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35133400685-jeukdjddlf0spljsjoqa76tjve9mlqhd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0ztnAHWnIXtgRlZfc_9CFqZPj7-sETgY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "35133400685-jeukdjddlf0spljsjoqa76tjve9mlqhd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
