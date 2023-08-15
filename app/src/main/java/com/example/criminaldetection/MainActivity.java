@@ -127,16 +127,23 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 // Handle navigation menu item clicks here
                 switch (item.getItemId()) {
-                    case R.id.toProfile:
-                        // Handle 'Profile' item click
-                        Intent intentProfile = new Intent(MainActivity.this, ProfileActivity.class);
-                        startActivity(intentProfile);
-                        break;
+//                    case R.id.toProfile:
+//                        // Handle 'Profile' item click
+//                        Intent intentProfile = new Intent(MainActivity.this, ProfileActivity.class);
+//                        startActivity(intentProfile);
+//                        break;
 
                     case R.id.toClassify:
                         // Handle 'Classify' item click
                         Intent intentClassify = new Intent(MainActivity.this, ClassifyActivity.class);
                         startActivity(intentClassify);
+                        break;
+
+
+                    case R.id.tomyClassify:
+                        // Handle 'Classify' item click
+                        Intent intentmyClassify = new Intent(MainActivity.this, Classify.class);
+                        startActivity(intentmyClassify);
                         break;
 
                     case R.id.toMultiDrop:
@@ -163,37 +170,37 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intentGsap);
                         break;
 
-                    case R.id.toRestApi:
-                        // Handle 'See youtube video' item click
-                        Intent intentApi = new Intent(MainActivity.this, RestApi.class);
-                        startActivity(intentApi);
-                        break;
+//                    case R.id.toRestApi:
+//                        // Handle 'See youtube video' item click
+//                        Intent intentApi = new Intent(MainActivity.this, RestApi.class);
+//                        startActivity(intentApi);
+//                        break;
 
-                    case R.id.toSetting:
-                        // Handle 'Setting' item click
-                        Toast.makeText(MainActivity.this, "Setting is selected", Toast.LENGTH_SHORT).show();
-                        break;
+//                    case R.id.toSetting:
+//                        // Handle 'Setting' item click
+//                        Toast.makeText(MainActivity.this, "Setting is selected", Toast.LENGTH_SHORT).show();
+//                        break;
 
-                    case R.id.toRate:
-                        // Handle 'Rate Us' item click
-                        Intent intentRate = new Intent(MainActivity.this, RatingActivity.class);
-                        startActivity(intentRate);
-                        break;
+//                    case R.id.toRate:
+//                        // Handle 'Rate Us' item click
+//                        Intent intentRate = new Intent(MainActivity.this, RatingActivity.class);
+//                        startActivity(intentRate);
+//                        break;
 
-                    case R.id.toLogout:
-
-                        SharedPreferences preferences = getSharedPreferences("checkbox", MODE_PRIVATE);
-                        SharedPreferences.Editor editor = preferences.edit();
-                        editor.putString("remember", "false");
-                        editor.apply();
-
-                        // Handle 'Logout' item click
-                        FirebaseAuth.getInstance().signOut();
-                        Toast.makeText(MainActivity.this, "Logged out", Toast.LENGTH_SHORT).show();
-                        Intent intentLogout = new Intent(MainActivity.this, LoginActivity.class);
-                        startActivity(intentLogout);
-                        finish();
-                        break;
+//                    case R.id.toLogout:
+//
+//                        SharedPreferences preferences = getSharedPreferences("checkbox", MODE_PRIVATE);
+//                        SharedPreferences.Editor editor = preferences.edit();
+//                        editor.putString("remember", "false");
+//                        editor.apply();
+//
+//                        // Handle 'Logout' item click
+//                        FirebaseAuth.getInstance().signOut();
+//                        Toast.makeText(MainActivity.this, "Logged out", Toast.LENGTH_SHORT).show();
+//                        Intent intentLogout = new Intent(MainActivity.this, LoginActivity.class);
+//                        startActivity(intentLogout);
+//                        finish();
+//                        break;
 
                 }
 
@@ -214,20 +221,20 @@ public class MainActivity extends AppCompatActivity {
                 // Handle menu item clicks here
                 switch (item.getItemId()) {
 
-                    case R.id.gotoClassify:
-                        Intent intent = new Intent(MainActivity.this, ClassifyActivity.class);
-                        startActivity(intent);
-                        return true;
+//                    case R.id.gotoClassify:
+//                        Intent intent = new Intent(MainActivity.this, ClassifyActivity.class);
+//                        startActivity(intent);
+//                        return true;
 
-                    case R.id.gotoMultiDrop:
-                        Intent intentMultiDrop = new Intent(MainActivity.this, MultipleDropdown.class);
-                        startActivity(intentMultiDrop);
-                        return true;
+//                    case R.id.gotoMultiDrop:
+//                        Intent intentMultiDrop = new Intent(MainActivity.this, MultipleDropdown.class);
+//                        startActivity(intentMultiDrop);
+//                        return true;
 
-                    case R.id.gotoVideoPlayer:
-                        Intent intentEmbedVideo = new Intent(MainActivity.this, EmbedVideo.class);
-                        startActivity(intentEmbedVideo);
-                        return true;
+//                    case R.id.gotoVideoPlayer:
+//                        Intent intentEmbedVideo = new Intent(MainActivity.this, EmbedVideo.class);
+//                        startActivity(intentEmbedVideo);
+//                        return true;
 
 
                     case R.id.changePass:

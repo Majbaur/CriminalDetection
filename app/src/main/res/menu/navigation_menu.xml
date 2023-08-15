@@ -7,13 +7,17 @@
             android:icon="@drawable/ic_home_24"
             />
 
-        <item android:id="@+id/toProfile"
-            android:title="Profile"
-            android:icon="@drawable/ic_person_24"
-            />
+<!--        <item android:id="@+id/toProfile"-->
+<!--            android:title="Profile"-->
+<!--            android:icon="@drawable/ic_person_24"-->
+<!--            />-->
 
         <item android:id="@+id/toClassify"
-            android:title="@string/classify_crops"
+            android:title="Criminal Detection"
+            android:icon="@drawable/ic_baseline_category_24"
+            />
+        <item android:id="@+id/tomyClassify"
+            android:title="Face  Detection"
             android:icon="@drawable/ic_baseline_category_24"
             />
 
@@ -22,7 +26,7 @@
             android:icon="@drawable/ic_drop_down_circle_24"
             />
         <item android:id="@+id/toYoutube"
-            android:title="Video Player"
+            android:title="Media Player"
             android:icon="@drawable/ic_video_library_24"
             />
         <item android:id="@+id/toPdfGenerator"
@@ -34,35 +38,35 @@
             android:title="Gsap and SaaS"
             android:icon="@drawable/ic_baseline_animation_24"
             />
-        <item android:id="@+id/toRestApi"
-            android:title="REST Api"
-            android:icon="@drawable/ic_baseline_api_24"
-            />
+<!--        <item android:id="@+id/toRestApi"-->
+<!--            android:title="REST Api"-->
+<!--            android:icon="@drawable/ic_baseline_api_24"-->
+<!--            />-->
 
     </group>
 
-    <item android:title="Additional"
+<!--    <item android:title="Additional"-->
 
-        >
+<!--        >-->
 
-        <menu>
-
-
-            <item android:id="@+id/toSetting"
-                android:title="Setting"
-                android:icon="@android:drawable/ic_menu_manage"/>
+<!--        <menu>-->
 
 
-            <item android:id="@+id/toRate"
-                android:icon="@android:drawable/btn_star_big_on"
-                android:title="Rate Us"/>
+<!--            <item android:id="@+id/toSetting"-->
+<!--                android:title="Setting"-->
+<!--                android:icon="@android:drawable/ic_menu_manage"/>-->
 
 
-            <item android:id="@+id/toLogout"
-                android:icon="@android:drawable/presence_busy"
-                android:title="@string/logout"/>
+<!--            <item android:id="@+id/toRate"-->
+<!--                android:icon="@android:drawable/btn_star_big_on"-->
+<!--                android:title="Rate Us"/>-->
 
-        </menu>
 
-    </item>
+<!--            <item android:id="@+id/toLogout"-->
+<!--                android:icon="@android:drawable/presence_busy"-->
+<!--                android:title="@string/logout"/>-->
+
+<!--        </menu>-->
+
+<!--    </item>-->
 </menu>

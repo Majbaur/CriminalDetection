@@ -383,16 +383,16 @@ public class ClassifyActivity extends AppCompatActivity {
             // Creates inputs for reference.
             TensorImage image = TensorImage.fromBitmap(bitmap);
 
-            // Runs model inference and gets result.
-            Model.Outputs outputs = model.process(image);
-            List<Category> probability = outputs.getProbabilityAsCategoryList();
+//            // Runs model inference and gets result.
+//            Model.Outputs outputs = model.process(image);
+//            List<Category> probability = outputs.getProbabilityAsCategoryList();
 
-            probability.sort(Comparator.comparing(Category::getScore, Comparator.reverseOrder()));
-            int score = (int) ceil(probability.get(0).getScore() * 100);
-
-            predictionResult = "Prediction: " + probability.get(0).getLabel() + "(" + score +"%)";
-            predictionResult1 = probability.get(0).getLabel() + " (" + score +"%)";
-            activityClassifyBinding.result.setText(probability.get(0).getLabel() + ": " + score +"%");
+//            probability.sort(Comparator.comparing(Category::getScore, Comparator.reverseOrder()));
+//            int score = (int) ceil(probability.get(0).getScore() * 100);
+//
+//            predictionResult = "Prediction: " + probability.get(0).getLabel() + "(" + score +"%)";
+//            predictionResult1 = probability.get(0).getLabel() + " (" + score +"%)";
+//            activityClassifyBinding.result.setText(probability.get(0).getLabel() + ": " + score +"%");
 
             // Releases model resources if no longer used.
             model.close();

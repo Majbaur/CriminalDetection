@@ -2,21 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item
-        android:id="@+id/gotoClassify"
-        android:title="@string/classify_crops"
-        app:showAsAction="never"
-        />
-    <item
-        android:id="@+id/gotoMultiDrop"
-        android:title="@string/multiple_drop"
-        app:showAsAction="never"
-        />
-    <item
-        android:id="@+id/gotoVideoPlayer"
-        android:title="@string/video_player"
-        app:showAsAction="never"
-        />
+<!--    <item-->
+<!--        android:id="@+id/gotoClassify"-->
+<!--        android:title="@string/classify_crops"-->
+<!--        app:showAsAction="never"-->
+<!--        />-->
+<!--    <item-->
+<!--        android:id="@+id/gotoMultiDrop"-->
+<!--        android:title="@string/multiple_drop"-->
+<!--        app:showAsAction="never"-->
+<!--        />-->
+<!--    <item-->
+<!--        android:id="@+id/gotoVideoPlayer"-->
+<!--        android:title="@string/video_player"-->
+<!--        app:showAsAction="never"-->
+<!--        />-->
     <item
         android:id="@+id/settings"
         android:title="@string/settings_option"

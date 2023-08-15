@@ -30,7 +30,7 @@
         android:layout_below="@id/welcome_text"
         android:layout_marginTop="30dp"
         android:padding="6dp"
-        android:text="Semester*"
+        android:text="Rank*"
         android:textColor="#555555"
         android:focusable="true"
         android:focusableInTouchMode="true"/>
@@ -51,7 +51,7 @@
         android:layout_below="@id/spinner_semester"
         android:layout_marginTop="30dp"
         android:padding="6dp"
-        android:text="Courses*"
+        android:text="Officers Name*"
         android:textColor="#555555"
         android:focusable="true"
         android:focusableInTouchMode="true" />

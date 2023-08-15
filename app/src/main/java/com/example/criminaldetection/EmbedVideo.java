@@ -29,7 +29,9 @@ public class EmbedVideo extends AppCompatActivity {
         activityEmbedVideoBinding.youtubeVideo.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
             @Override
             public void onReady(@NonNull YouTubePlayer youTubePlayer) {
-                String videoId = "cUWTvbn7eCI";
+//                String videoId = "cUWTvbn7eCI";
+                String videoId = "aWIAW1K4Abs";
+
                 youTubePlayer.cueVideo(videoId, 0);
             }
         });

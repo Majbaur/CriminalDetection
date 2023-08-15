@@ -58,31 +58,32 @@ public class MultipleDropdown extends AppCompatActivity {
                 int parentID = parent.getId();
                 if (parentID == R.id.spinner_semester){
                     switch (selectedSemester){
-                        case "Select Semester": courseAdapter = ArrayAdapter.createFromResource(parent.getContext(),
+
+                        case "Select Rank": courseAdapter = ArrayAdapter.createFromResource(parent.getContext(),
                                 R.array.array_course, R.layout.spinner_layout);
                             break;
-                        case "1st Semester": courseAdapter = ArrayAdapter.createFromResource(parent.getContext(),
+                        case "Inspector General of Police (IGP)": courseAdapter = ArrayAdapter.createFromResource(parent.getContext(),
                                 R.array.array_first_semester, R.layout.spinner_layout);
                             break;
-                        case "2nd Semester": courseAdapter = ArrayAdapter.createFromResource(parent.getContext(),
+                        case "Additional Inspector General (Addl. IGP)": courseAdapter = ArrayAdapter.createFromResource(parent.getContext(),
                                 R.array.array_second_semester, R.layout.spinner_layout);
                             break;
-                        case "3rd Semester": courseAdapter = ArrayAdapter.createFromResource(parent.getContext(),
+                        case "Deputy Inspector General (DIG)": courseAdapter = ArrayAdapter.createFromResource(parent.getContext(),
                                 R.array.array_third_semester, R.layout.spinner_layout);
                             break;
-                        case "4th Semester": courseAdapter = ArrayAdapter.createFromResource(parent.getContext(),
+                        case "Senior Superintendent of Police (SSP)": courseAdapter = ArrayAdapter.createFromResource(parent.getContext(),
                                 R.array.array_fourth_semester, R.layout.spinner_layout);
                             break;
-                        case "5th Semester": courseAdapter = ArrayAdapter.createFromResource(parent.getContext(),
+                        case "Superintendent of Police (SP)": courseAdapter = ArrayAdapter.createFromResource(parent.getContext(),
                                 R.array.array_fifth_semester, R.layout.spinner_layout);
                             break;
-                        case "6th Semester": courseAdapter = ArrayAdapter.createFromResource(parent.getContext(),
+                        case "Additional Superintendent of Police (Addl. SP)": courseAdapter = ArrayAdapter.createFromResource(parent.getContext(),
                                 R.array.array_sixth_semester, R.layout.spinner_layout);
                             break;
-                        case "7th Semester": courseAdapter = ArrayAdapter.createFromResource(parent.getContext(),
+                        case "Deputy Superintendent of Police (DSP)": courseAdapter = ArrayAdapter.createFromResource(parent.getContext(),
                                 R.array.array_seventh_semester, R.layout.spinner_layout);
                             break;
-                        case "8th Semester": courseAdapter = ArrayAdapter.createFromResource(parent.getContext(),
+                        case "Assistant Superintendent of Police (ASP)": courseAdapter = ArrayAdapter.createFromResource(parent.getContext(),
                                 R.array.array_eighth_semester, R.layout.spinner_layout);
                             break;
 
@@ -118,12 +119,12 @@ public class MultipleDropdown extends AppCompatActivity {
         tvCourseSpinner = findViewById(R.id.textView_courses);
 
         submitButton.setOnClickListener(v -> {
-            if (selectedSemester.equals("Select Semester")) {
+            if (selectedSemester.equals("Select Rank")) {
                 Toast.makeText(MultipleDropdown.this, "Please select Semester from the list", Toast.LENGTH_LONG).show();
                 tvSemesterSpinner.setError("Semester is required!");      //To set error on TextView
                 tvSemesterSpinner.requestFocus();
                 tvCourseSpinner.setError(null);
-            } else if (selectedCourse.equals("Select Course")) {
+            } else if (selectedCourse.equals("Select Rank")) {
                 Toast.makeText(MultipleDropdown.this, "Please select course from the list", Toast.LENGTH_LONG).show();
                 tvCourseSpinner.setError("Course is required!");
                 tvCourseSpinner.requestFocus();
